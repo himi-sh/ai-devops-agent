@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f1115;
+  color: #e8eaed;
+}
+a { color: #6ea8fe; text-decoration: none; }
+.app { display: flex; min-height: 100vh; }
+.sidebar {
+  width: 220px; padding: 16px; background: #161a22;
+  border-right: 1px solid #242a35;
+}
+.sidebar h1 { font-size: 16px; margin: 0 0 20px; }
+.sidebar .metric { font-size: 12px; opacity: 0.7; margin-bottom: 6px; }
+.sidebar .metric b { display: block; color: #fff; font-size: 14px; }
+.content { flex: 1; padding: 24px; overflow: auto; }
+h2 { margin-top: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #242a35; }
+th { color: #9aa5b1; font-weight: 500; }
+tr.clickable { cursor: pointer; }
+tr.clickable:hover { background: #1a1f29; }
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+}
+.sev-critical { background: #7f1d1d; color: #fee2e2; }
+.sev-high { background: #9a3412; color: #ffedd5; }
+.sev-medium { background: #78350f; color: #fef3c7; }
+.sev-low { background: #064e3b; color: #d1fae5; }
+.status-open { background: #1e3a8a; color: #dbeafe; }
+.status-diagnosed { background: #4338ca; color: #e0e7ff; }
+.status-remediated { background: #6b21a8; color: #f3e8ff; }
+.status-resolved { background: #065f46; color: #d1fae5; }
+pre {
+  background: #0b0e14; padding: 12px; border-radius: 6px;
+  overflow: auto; font-size: 12px; line-height: 1.5;
+  border: 1px solid #242a35;
+}
+.panel { background: #161a22; border: 1px solid #242a35; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.panel h3 { margin-top: 0; }
+button {
+  background: #2563eb; color: #fff; border: none; padding: 8px 16px;
+  border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500;
+}
+button:hover { background: #1d4ed8; }
+button.secondary { background: #374151; }
+button.secondary:hover { background: #4b5563; }
+button.danger { background: #b91c1c; }
+button.danger:hover { background: #991b1b; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.confidence-bar {
+  background: #242a35; border-radius: 4px; height: 8px; overflow: hidden; margin: 8px 0;
+}
+.confidence-fill { background: #10b981; height: 100%; }
+.diff-add { color: #10b981; }
+.diff-del { color: #ef4444; }
+.diff-meta { color: #9aa5b1; }
+.nav { display: flex; gap: 16px; margin-bottom: 16px; font-size: 14px; }
+.nav a { color: #9aa5b1; }
+.nav a.active { color: #fff; font-weight: 600; }
+.empty { text-align: center; padding: 40px; color: #6b7280; }

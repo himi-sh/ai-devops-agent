@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/components/alertnav.tsx","./src/pages/alertdashboard.tsx","./src/pages/approvalscreen.tsx","./src/pages/diagnosispanel.tsx","./src/pages/investigationview.tsx","./src/pages/remediationpanel.tsx"],"version":"5.9.3"}
